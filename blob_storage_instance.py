@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 
-```storage_acount_key = "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
+storage_acount_key = "Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw=="
 storage_account_name = "devstoreaccount1"
 connection_string = "DefaultEndpointsProtocol=http;AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;BlobEndpoint=http://127.0.0.1:10000/devstoreaccount1;QueueEndpoint=http://127.0.0.1:10001/devstoreaccount1;TableEndpoint=http://127.0.0.1:10002/devstoreaccount1;"
 container_raw = "csv"
@@ -40,4 +40,4 @@ logging.info('< 3º > Arquivo que estou acessando: %s' , {file_name})
 blob_dowload = file_name.download_blob().readall().decode('utf-8')
 logging.info('<****** 4º ****** > Download do arquivo ')
 
-string_io_content = StringIO(blob_dowload)```
+string_io_content = StringIO(blob_dowload)
